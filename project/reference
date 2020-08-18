@@ -1,0 +1,323 @@
+ReferenceTypes/commands.txt
+class Planet {
+}
+Planet jupiter = new Planet();
+
+int i = 5;
+
+class Animal {
+ int id;
+ Animal(int id) {
+ this.id = id;
+ }
+}
+created class animal
+Animal dog = new Animal(12);
+
+Animal cat = new Animal(10);
+
+Animal nothing;
+nothing = cat
+nothing.id = 10
+cat.id
+o/p:10
+
+nothing = dog
+nothing.id
+o/p:12
+
+int j = i;
+o/p:5
+j = 6
+i
+o/p:5
+i == j
+o/p:false
+j = 5
+i == j
+o/p:true
+
+Animal dog = new Animal(12);
+Animal cat = new Animal(10);
+Animal ref = cat;
+Animal dog2 = new Animal(12);
+cat == dog
+o/p:false
+cat == ref
+o/p:true
+dog == dog2
+o/p:false
+
+1
+2
+12.34
+"Test".length()
+o/p:4
+
+BigDecimal bd = new BigDecimal("1.0");
+o/p:bd==>1.0
+
+String str=new String("Test")
+o/p:==>"Test"
+
+String str = "Test"
+o/p:str==>"Test"
+
+str.charAt(0)
+o/p:==>'T'
+str.charAt(2)
+o/p:==>s
+ str.charAt(3)
+ o/p:==>t
+ 
+String biggerString = "This is a lot of text";
+o/p:String biggerString ==> "This is a lot of text"
+
+biggerString.substring(5)
+o/p: "is a lot of text"
+biggerString.substring(5,13)
+o/p:"is a lot"
+biggerString.charAt(13)
+o/p:it will give index out of bound  exception
+biggerString.charAt(13)
+o/p:==>' '
+biggerString.charAt(456)
+error:IOBE
+
+String str1 = "Somestring"
+someString.length()
+o/p:10
+someString.charAt(5)
+o/p:t
+String someString = "This is a lot of text again"
+someString.length()
+o/p:27
+someString.charAt(5)
+o/p:i
+for(int i= 0; i<someString.length(); i++) {
+ System.out.println(someString.charAt(i));
+}
+o/p:T
+    h
+    i
+    s
+    
+    i
+    s
+    
+    a
+    
+    l
+    o
+    t
+    
+    o
+    f
+    
+    t
+    e
+    x
+    t
+    
+    a
+    g
+    a
+    i
+    n
+someString.indexOf("lot")
+o/p:10
+someString.charAt(10)
+o/p:l//first charcater of the string
+someString.charAt('i')
+o/p:IOBE
+someString.indexOf('i')
+o/p;2
+someString.lastIndexOf('i')
+o/p:25
+someString.contains("text")
+o/p:true
+String someString = "This is a lot of text again";
+someString.startsWith("This")
+o/p:true
+someString.startsWith("jfsdklfj")
+o/p:false
+someString.endsWith("jfsdklfj")
+o/p:false
+someString.endsWith("in")//true
+someString.endsWith("ain")//true
+someString.endsWith("again")//true
+someString.endsWith("againfsda")
+o/p:false
+someString.isEmpty()//false
+"fjsadlkfj".isEmpty()//false
+"".isEmpty()//true
+"true".equals("true")//true
+"value".equals("value")//true
+String str = "value"//"value"
+str.equals("value")//true 
+str.equals("VAlue")//false
+str.equalsIgnoreCase("VAlue")//true
+//string immutable means the value cannot cannot be changed
+String str = "in28Minutes"//"in28Minutes"
+ str.concat("is awesome");
+ o/p:==>"in28Minutesis awesome"
+str
+o/p:"in28Minutes"
+String anotherString = str.concat(" is awesome");
+o/p:anotherString ==>"in28Minutes is awesome"
+str
+o/p:str==>"in28Minutes"
+anotherString
+o/p:anotherString ==>"in28Minutesis awesome"
+String string2 = anotherString.concat(".");
+o/p:string2 ==>"in28Minutes is awesome."
+str
+o/p:str==>"in28Minutes"
+anotherString
+o/p:anotherString ==>"in28Minutesis awesome"
+string2
+o/p:anotherString ==>"in28Minutesis awesome."
+
+String str = "in 28Minutes is awesome."
+o/p:== "in28Minutes is awesome."
+str.toUpperCase()
+o/p:"IN28MINUTES IS AWESOME."
+str.toLowerCase()
+O/P:"in28minutes is awesome."
+str2.trim()
+String str2 = " in28Minutes is awesome. ";
+str2.trim()//it remove spaces
+O/P:"in28minutes is awesome."
+
+//starts executing from left side
+1 + 2//3
+"1" + "2"//"12"
+"1" + 2//"12"
+"1" + 23//"123"
+1 + 23//24
+1 + 2 + "3"//"33"
+"1" + 2 + 3//123
+int i=20;//20
+System.out.println("Value is " + 20)//Value is 20
+System.out.println("Value is " + 20 + 20)// Value is 2020
+System.out.println("Value is " + (20 + 20))//Value is 40
+String.join(",", "2", "3", "4")//"2,3,4"
+String.join(",", "A", "B","C")//"A,B,C"
+String.join(",", "A")//"A"
+String.join(",", "A", "B")//"A,B"
+"abcd".replace('a', 'z');//"zbcd"
+"abcd".replace("ab", "xyz");//"xyzcd
+String str = "jdsfja ";//"jdsfja"
+str.
+o/p:we will get all the methods
+String.
+o/p:it will print all the static methods
+"123" + "123" + "1234" + "123456"
+o/p:"1231231234123456"
+///if we have 200 number of string then what we need to do
+StringBuffer sb new StringBuffer("TEst");
+sb.append(" 123")//TEst 123
+sb//TEst 123
+sb.setCharAt(1,'e')//Test 123
+//in stringbuffer we can change the value
+//StringBuilder is offer in after java 9 
+//stringBuffer is a clas which is ready for multithreading
+if we  are ready with multithreading it means there is a penality
+when u r running a single thread there we no need of complex thins of multithreading
+StringBuffer might get really slow in those kind of situations we use String Bulder
+//string builder is a synchronised class
+
+StringBuilder sb = new StringBuilder("test");//test
+
+//java wrapper classes: it wraps around a datatype and gives it an object
+appearence
+wrapper classes are final and immutable
+utility methods are there
+store primitive values into a collections
+int  i 5
+Integer integer = new Integer("5");//5//first way
+Integer integer1 = new Integer("5");//5,,first way
+//second way is
+Integer integer = Integer.valueOf("5");//5
+Integer integer1 = Integer.valueOf("5");//5
+
+Integer integer1 = new Integer("5234");//5234
+Integer integer1 = new Integer("5234");
+Integer integer2 = new Integer("5234");
+
+Integer i1 = new Integer(5);
+Integer i2 = new Integer(5);
+Integer i3 = Integer.valueOf(5);
+Integer i4 = Integer.valueOf(5);
+i1 == i2//false
+i3 == i4//true
+//string class and all the wrapper classes are also immutable
+Integer integer = Integer.valueOf("4567");
+int i = integer.intValue();
+Float f = Float.valueOf("12.45");
+f.floatValue()
+f.intValue()
+//Autoboxing
+Integer seven = Integer.valueOf(7);//seven==>7
+Integer seven 7;//==>seven==>7
+Integer sevenAgain = 7;//7
+seven == sevenAgain//true
+Integer eight = Integer.valueOf(8);
+Integer.toBinaryString(eight);
+Integer.toHexString(eight);
+Integer eightyEight = Integer.valueOf(88);
+Integer.toHexString(eightyEight);
+seven++
+seven
+seven == sevenAgain
+Integer seven = 7;
+Integer sevenAgain = 7;
+seven == sevenAgain
+Integer.MAX_VALUE//2147483648
+Integer.MIN_VALUE//-2147483648
+Integer.SIZE//332
+Integer.BYTES//4
+
+//before 8 we dont have hava api for dates
+//LocalDate,LocalDateTime,LocalTime
+LocalDate now = LocalDate.now()
+//o/p: it throws an error like cannot symbol
+if we type /imports we will get all the imports
+import java.time.LocalDate;
+LocalDate now = LocalDate.now();//2020-07-20
+import java.time.LocalDateTime;
+ import java.time.*;
+today.getYear()//getYear()
+today.getYear()//2020
+today.getDayOfWeek()//Monday
+today.getDayOfMonth()//20
+today.getDayOfYear()//200
+today.getMonth()//july
+today.getMonthValue()//7
+today.isLeapYear()//true
+today.lengthOfYear()//366
+today.lengthOfMonth()//31
+today.plusDays(100)2020-10-20
+today.plusMonths(12)//2021-07-20
+today.plusYears(10)2030-07-20
+today.minusYears(100)//1920-07-20
+LocalDate hundredYearsBefore = today.minusYears(100);//1920-07-20
+today//2020-07-20
+//all the methods creates new instances of new value and it is immutable
+LocalDateTime now = LocalDateTime.now();//2020-07-20T15:50:48.423164
+//if we type now.plus
+//we will get all methods with now
+LocalTime now = LocalTime.now();//T15:50:48.423164
+LocalDate today = LocalDate.now();//2020-07-20
+
+LocalDate yesterady = LocalDate.of(2018, 01, 31);//2018-01-31
+LocalDate yesterday = LocalDate.of(2018, 01, 31);
+today//2018-02-01
+yesterday//2018-01-31
+today.withYear(2016)//2016-02-01
+today.withDayOfMonth(20)//2018-02-20
+today.withMonth(3)//2018-03-01
+today.withDayOfYear(120)//2018-04-30
+today.isBefore(yesterday)//false
+today.isAfter(yesterday)//true
+//note: LocalDate,LocalDateTime,LocalTime are all immutable.all modification method calls return new objects

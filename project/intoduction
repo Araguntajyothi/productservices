@@ -1,0 +1,183 @@
+Exercises
+Methods - Basics
+Write and execute a method named sayHelloWorldThrice to print Hello
+World thrice.
+Write and execute a method that prints the following four statements:
+I've created my first variable
+I've created my first loop
+Introduction To Methods -
+Multiplication Table
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 20/203
+I've created my first method
+I'm excited to learn Java
+Method Parameters
+1. Write a method printNumbers(int n) that prints all successive integers
+from 1 to n .
+2. Write a method printSquaresOfNumbers(int n) that prints the squares
+of all successive integers from 1 to n .
+Return value from Methods
+1. Write a method that returns the sum of three integers.
+2. Write a method that takes as input two integers representing two angles of a
+triangle, and computes the third angle. Hint: The sum of the three angles of a
+triangle is 180 degrees.
+Code Snippets
+3 * 4
+$2
+$2 * 3
+for( i =1; i<=10; i++) {
+System.out.printf("%d * %d = %d", table, i,
+table*i).println();
+}
+for( i =1; i<=10; i++) {
+ System.out.printf("%d * %d = %d", table, i,
+table*i).println();
+}
+for( i =1; i<=10; i++) {
+ System.out.printf("%d * %d = %d", table, i,
+table*i).println();
+}
+for( i =1; i<=10; i++) {
+ System.out.printf("%d * %d = %d", table, i,
+ table*i).println();
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 21/203
+}
+int table = 7;
+for( i =1; i<=10; i++) {
+System.out.printf("%d * %d = %d", table, i,
+table*i).println(); }
+table = 8
+for( i =1; i<=10; i++) {
+System.out.printf("%d * %d = %d", table, i,
+table*i).println();
+}
+System.out.println("Hello World")
+System.out.println("Hello World")
+System.out.println("Hello World")
+System.out.println("Hello World");
+ System.out.println("Hello World");
+System.out.println("Hello World");
+ System.out.println("Hello World");
+sayHelloWorldTwice()
+sayHelloWorldTwice()
+void sayHelloWorldThrice(){
+ System.out.println("Hello World");
+ System.out.println("Hello World");
+ System.out.println("Hello World");
+}
+sayHelloWorldThrice()
+printLearningExperience()
+printLearningExperience()
+void NameOfMethod(){
+}
+void nameOfMethod(){
+}
+void sayHelloWorldTwice(){
+ System.out.println("HelloWorld");
+ System.out.println("HelloWorld");
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 22/203
+} sayHelloWorldTwice()
+void printLearningExperience() {
+System.out.println("I've created sdf first variable");
+System.out.println("I've created fsadjf first method");
+System.out.println("I've created fsajdfl first loop");
+System.out.println("I'm excited fasdflkjfskfsd learn
+Java");
+}
+printLearningExperience()
+sayHelloWorldThrice() sayHelloWorldTwice() sayHelloWorld(1)
+sayHelloWorld(1)
+sayHelloWorld(2)
+sayHelloWorld(2)
+sayHelloWorld(4)
+sayHelloWorld(6)
+void sayHelloWorld(int noOfTimes) {
+for(int i=1; i<=noOfTimes; i++) {
+System.out.println("Hello World");
+}
+}
+sayHelloWorld(6)
+sayHelloWorld(3)
+sayHelloWorld(2)
+void printNumbers(int n) {
+ for(int i=1; i<=n; i++) {
+ System.out.println(i);
+ }
+}
+printNumbers(10)
+printNumbers(3)
+void printSquaresOfNumbers(int n) {
+ for(int i=1; i<=n; i++) {
+ System.out.println(i*i);
+ }
+} printSquaresOfNumbers(5)
+printSquaresOfNumbers(3)
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 23/203
+sayHelloWorld(4)
+for( i =1; i<=10; i++) {
+ System.out.printf("%d * %d = %d", table, i,
+table*i).println();
+}
+int i; for(i=1;i<=10;i++)
+ System.out.printf("%d * %d = %d", 5, i, 5 *
+i).println(); for(i=1;i<=10;i++)
+ {
+ System.out.printf("%d * %d = %d", 5, i, 5 *
+i).println();
+}
+void printMultiplicationTable() {
+for(int i=1;i<=10;i++) {
+System.out.printf("%d * %d = %d", 5, i, 5 *
+i).println();
+}
+}
+printMultiplicationTable()
+void printMultiplicationTable(int table) {
+for(int i=1;i<=10;i++) {
+System.out.printf("%d * %d = %d", table, i,
+table * i).println();
+}
+}
+printMultiplicationTable(6)
+printMultiplicationTable(7)
+printMultiplicationTable()
+printMultiplicationTable(6)
+Math.max(1,2)
+void sum(int firstNumber,int secondNumber) {
+ int sum = firstNumber +
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 24/203
+ secondNumber;
+ System.out.println(sum);
+}
+sum(5, 10) void sum(int firstNumber,int secondNumber, int
+ thirdNumber) {
+ int sum = firstNumber + secondNumber + thirdNumber;
+ System.out.println(sum); }
+sum(5, 10, 15) Math.max(4,5)
+$110 int max = Math.max(15, 25);
+max
+sum(1, 10)
+int sumOfTwoNumbers(int firstNumber, int secondNumber) {
+ int sum = firstNumber + secondNumber;
+ return sum;
+}
+sumOfTwoNumbers(1,1)
+int sum = sumOfThreeNumbers(2,3,4);
+calculateThirdAngle(20, 50)
+int sumOfThreeNumbers(int firstNumber, int secondNumber,
+int thirdNumber) {
+ int sum = firstNumber + secondNumber + thirdNumber;
+ return sum;
+}
+sumOfThreeNumbers(1,2,3)
+sumOfThreeNumbers(15,2,3)
+int calculateThirdAngle(int angle1, int angle2) {
+ int angle3 = 180 - (angle1 + angle2);
+ return angle3;
+}
+calculateThirdAngle(20, 20)
+calculateThirdAngle(20, 20)

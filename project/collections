@@ -1,0 +1,386 @@
+Exercises
+Set Interface
+Find unique characters in a list of characters
+In Insertion Order
+In Sort Order
+Map Interface
+Find number of occurances of each character and word in a piece of text.
+Code Examples
+/12-Collections/commands.txt
+
+List<Sstring> words = List.of("Apple", "Bat", "cat");
+words.size()//3
+words.isEmpty()//false
+words.get(0)//"Apple"
+words.contains("Dog");//false
+words.contains("Cat");//yes
+words.indexOf("Cat")//2
+words//words==>[Apple, Bat, Cat]
+words.indexOf("Dog")//-1 means word is not present
+words.add("Dog")//java.lang.unsupported operations
+
+List<String> wordsArrayList = new ArrayList<String>(words)
+//wordsArrayList ==> [Apple, Bat, Cat]
+List<String> wordsLinkedList = new LinkedList<String>(words)
+wordsLinkedList ==> [Apple, Bat, Cat]
+List<String> wordsVector = new Vector<String>(words)
+wordsVector ==> [Apple, Bat, Cat]
+wordsArrayList.add("Dog")//true
+wordsArrayList
+wordsArrayList.add("Elephant")//true
+wordsArrayList.add(2, "Ball")
+wordsArrayList////wordsArrayList ==> [Apple, Bat, Cat, Dog, elephant]
+//wordsArrayList ==> [Apple, Bat, Cat, Dog]
+wordsArrayList.add("Ball")
+//wordsArrayList ==> [Apple, Bat, Ball, Cat, Dog]
+wordsArrayList
+//wordsArrayList ==> [Apple, Bat, Ball,  Cat, Dog]
+
+
+List<String> newList = List.of("Yak","Zebra");
+newList==>[yak, zebra]
+wordsArrayList.addAll(newList)//true
+wordsArrayList
+//wordsArrayList ==> [Apple, Bat, Cat, Dog, elephant, Ball, Yak, Zebra]
+
+wordsArrayList.set(6, "Fish")
+//wordsArrayList ==> [Apple, Bat,Ball, Cat, Dog, elephant, Fish, Yak, Zebra]
+wordsArrayList
+////wordsArrayList ==> [Apple, Bat, Ball, Cat, Dog, elephant, fish, Yak, Zebra]
+wordsArrayList.remove(2)//"Ball"
+wordsArrayList////wordsArrayList ==> [Apple, Bat, Cat, Dog, elephant, fish, Yak, Zebra]
+wordsArrayList.remove("Dog")//true
+wordsArrayList
+wordsArrayList.remove("Dog")//false
+
+List<Sstring> words = List.of("Apple", "Bat", "cat");
+words ==> [Apple, Bat, Cat]
+for(int i=0; i < words.size(); i++) {
+ System.out.println(words.get(i));
+}
+//Apple
+Bat
+Cat
+for(String word:words) {
+ System.out.println(word);
+}
+Apple
+Bat
+Cat
+Iterator wordsIterator = words.iterator();
+//wordsIterator ==> java.util.AbstractList$Itr@3712b94
+while(wordsIterator.hasNext()) {
+ System.out.println(wordsIterator.next());
+}
+//Apple
+Bat
+Cat
+List<Sstring> words = List.of("Apple", "Bat", "cat");
+words ==> [Apple, Bat, Cat]
+List<String> wordsAl = new ArrayList<>(words);
+// wordsAl==>[Apple,Bat,Cat]
+for(String word:words) {
+ if(word.endsWith("at")) {
+ System.out.println(word);
+ }
+ //Bat
+ Cat
+for(String word:wordsAl) {
+ if(word.endsWith("at")) {
+ wordsAl.remove(word);
+ }
+}
+wordsAl
+wordsAl==> [Apple,Cat]
+
+
+List<String> words = List.of("Apple", "Bat" , "Cat");
+List<String> wordsAl = new ArrayList<>(words);
+Iterator<String> iterator = wordsAl.iterator();
+while(iterator.hasNext()) {
+ if(iterator.next().endsWith("at")) {
+ iterator.remove();
+ }
+}
+wordsAl//wordsAl==>[Apple]
+
+List value = List.of("A", 'A' , 1, 1.0);
+//value ==> [A,A,1,1.0]
+value.get(2)//1
+value.get(2) instanceof Integer//true
+value.get(1) instanceof Character//true
+value.get(3) instanceof Double//true
+List<Integer> numbers = List.of(101,102,103,104,105);
+numbers ==>[101,102,103,104,105]
+numbers.indexOf(101);//0
+List<Integer> numbersAl = new ArrayList<>(numbers);
+numbersAl ==>[101,102,103,104,105]
+numbersAl.indexOf(101)//0
+numbersAl.remove(101);//IOBE
+numbersAl.remove(101)///IOBE
+numbersAl.remove(Integer.valueOf(101))//true
+numbersAl
+//numbersAl ==>[102,103,104,105]
+
+List<Integer> numbers = List.of(123,12,3,45);
+numbers ==> [123,12,3,45]
+List<Integer> numbersAl = new ArrayList<>(numbers);
+numbersAl ==> [123,12,3,45]
+numbersAl.sort(
+sort(
+numbersAl.sort();//method sorrrt in interface cannot be applied to given types
+Collections.sort(numbersAl);
+numbersAl
+numbersAl ==>[3,12,45,123]
+
+Set<String> set = Set.of("Apple", "Banana", "cat")
+set==>[Apple, Banana, Cat]
+set.add("Apple");
+//java.lang.unSupportedOperationException
+Set<String> hashset = new HashSet<>(set);
+hashset ==> [Apple, Cat, Banana]
+hashset.add("Apple")//false
+hashset
+hashset ==> [Apple, Cat, Banana]
+hashset.add(2, "Apple")
+//error:no suitable method found for add(int,java.lang.String)
+hashSet==> [A,B,C,D,Z]
+
+Set<String> set = Set.of("A", "Z","D", "C", "B");
+hashSet.add("A")
+hashSet.add("B")
+hashSet
+hashSet.add("C")
+hashSet
+hashSet.add("CA")
+hashSet
+hashSet.add("CAfsadfa")
+hashSet
+treeSet.add("Cat")
+treeSet.add("Bat")
+treeSet.add("Apple")
+treeSet
+hashSet.add("Cat");
+hashSet.add("Bat");
+hashSet.add("Apple");
+hashSet
+hashSet.add("Dog");
+hashSet
+hashSet.add("Elephant");
+hashSet.add(5);
+hashSet.add(4);
+hashSet.add(3);
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 133/203
+hashSet.add(2);
+hashSet.add(1);
+hashSet
+Set<Integer> hashSet = new HashSet<>();
+hashSet.add(589789);
+hashSet.add(58978);
+hashSet.add(5897);
+hashSet.add(589);
+hashSet.add(58);
+hashSet.add(5);
+hashSet
+Set<Integer> linkedHashSet = new LinkedHashSet<>();
+linkedHashSet.add(589789);
+linkedHashSet.add(58978);
+linkedHashSet.add(5897);
+linkedHashSet.add(589);
+linkedHashSet.add(58);
+linkedHashSet.add(5);
+linkedHashSet
+Set<Integer> treeSet = new TreeSet<>();
+treeSet.add(584567);
+treeSet.add(58456);
+treeSet.add(5845);
+treeSet.add(584);
+treeSet.add(58);
+treeSet.add(5);
+treeSet
+////hashset,linkedhashset,treeset
+Set<Integer> numbers = new HashSet<>();
+numbers ==> []
+numbers.add(765432);//true
+numbers.add(76543);//true
+numbers.add(7654);//true
+numbers.add(765);//true
+numbers.add(76);//true
+numbers
+//numbers ==>[765432,7654,76,765,76543]
+
+Set<Integer> numbers = new LinkedHashSet<>();
+numbers ==> []
+numbers.add(765432);//true
+numbers.add(76543);//true
+numbers.add(7654);//true
+numbers.add(765);//true
+numbers.add(76);//true
+numbers
+numbers==>[765432,76543,7654,765,76]
+numbers.add(765789);//true
+numbers
+numbers==>[765432,76543,7654,765,76,765789]
+numbers.add(76)//false
+numbers
+numbers==>[765432,76543,7654,765,76,765789]
+
+Set<Integer> numbers = new TreeSet<>();
+numbers.add(765432);//true
+numbers.add(76543);//true
+numbers.add(7654);//true
+numbers.add(765);//true
+numbers.add(76);//true
+numbers
+numbers==>[76,765,7654,76543,765432]
+numbers.add(76)//false
+
+List<Character> characters = List.of('A','Z','A', 'B','Z','F');
+characters ==> [A,Z,A,B,Z,F]
+
+Set<Character> treeSet = new TreeSet<>(characters);
+		System.out.println(treeSet);
+//[A,B,F,Z]
+
+Set<Character> linkedHashSet = new LinkedHashSet<>(characters);
+		System.out.println("linkedHashSet " + linkedHashSet);
+//o/p [A,Z,B,F]
+
+Set<Character> hashSet = new HashSet<>(characters);
+		System.out.println("hashSet " + hashSet);
+		// o/p [A,B,F,Z]
+			
+TreeSet<Integer> numbers = new TreeSet<>(Set.of(65,54,34,12,99));
+numbers ==> [65,54,34,12,99]
+numbers.floor(40)//34/floor means lower than values present inside floor()
+numbers.floor(34)/34
+numbers.lower(34)//12
+numbers.ceiling(34)//34//ceiling means greater than or equal to
+numbers.ceiling(36)//54
+numbers.higher(34)//54
+numbers
+numbers ==>[12,34,54,65,99]
+
+numbers.subSet(20,80)//34,54,65
+numbers.subSet(34,54)//34
+numbers.subSet(34,65)//34,54
+numbers.subSet(34,true,65,true)//34,54,65
+numbers.subSet(34,false,65,false)//54
+numbers.headSet(50)//12,34
+numbers.tailSet(50)//54,65,99
+
+
+Queue<String> queue = new PriorityQueue<>();
+queue ==> []
+queue.poll()//null
+queue.offer("Apple")//true
+queue.addAll(List.of("Zebra", "Monkey", "Cat"))//true
+queue
+queue ==>[Apple, Cat, Monkey, Zebra]
+queue.poll()//"Apple"
+queue
+//queue ==> [Cat, Zebra, Monkey]
+queue.poll()//"Cat"
+queue.poll()//"Monkey"
+queue.poll()//"Zebra"
+queue.poll()//null
+
+
+Map<String, Integer> map = Map.of("A",3,"B",5,"Z",10);
+map ==> {z=10, A=3, B=5}
+map.put("R",1);
+o/p:java.lang.UnsupportedOperationException thrown
+map
+//map ==> {z=10, A=3, B=5}
+map.get("Z")//10
+map.get("A")//3
+map.get("C")//null
+map.size()//3
+map.isEmpty()//false
+map.containsKey("A")//true
+map.containsKey("F")//false
+map.containsValue(3)//true
+map//map ==> {z=10, A=3, B=5}
+map.containsValue(4)//false
+map.keySet()//[Z,A,B]
+map.values()//[10,3,5]
+map//map ==> {z=10, A=3, B=5}
+
+Map<String, Integer> map = Map.of("A",3,"B",5,"Z",10);
+map ==> {z=10, A=3, B=5}
+Map<String, Integer> hashmap = new HashMap<>(map);
+hashmap ==> {A=3,z=10,B=5}
+hashmap.put("F",5)//null
+hashmap
+//hashmap ==> {A=3,z=10,B=5,F=5}
+hashmap.put("Z",11)//10
+hashmap
+//hashmap ==> {A=3,z=11,B=5,F=5}
+
+
+Map<String, Integer> map = Map.of("A",3,"Z",5,"B",10);
+Map<String, Integer> linkedHashmap = new LinkedHashMap<>
+(map);
+
+HashMap<String, Integer> hashmap = new HashMap<>();
+hashmap==>{}
+hashmap.put("Z",5)//null
+hashmap.put("A",15)//null
+hashmap.put("F",25)//null
+hashmap.put("L",250)//null
+hashmap
+//hashmap ==>{A=15, F=25, Z=5, L=250}
+
+LinkedHashMap<String, Integer> linkedHashMap = new LinkedHashMap<>();
+linkedHashMap ==>{}
+hashmap
+//hashmap ==>{A=15, F=25, Z=5, L=250}
+linkedHashMap.put("F",25)//null
+linkedHashMap.put("A",15)//null
+linkedHashMap.put("Z",5)//null
+linkedHashMap.put("L",250)//null
+linkedHashMap
+//linkedHashMap ==> {F=25, A=15, Z=5, L=250}
+
+
+TreeMap<String, Integer> treemap = new TreeMap<>();
+treemap ==>{}
+treemap.put("F",25)//null
+treemap.put("A",15)//null
+treemap.put("Z",5)//null
+treemap.put("L",250)//null
+treemap
+//treemap ==>{A=15, F=25, L=250, Z=5}
+
+TreeMap<String, Integer> treemap = new TreeMap<>();
+treemap.put("F",25)//null
+treemap.put("Z",5)//null
+treemap.put("L",250)//null
+treemap.put("A",15)//null
+treemap.put("B",25)//null
+treemap.put("G",25)//null
+treemap
+//treemap ==>{A=15, B=25, G=25, L=250, Z=5}
+treemap.higherKey("B")//"F"
+treemap.higherKey("C")//"F"
+treemap.lowerKey("C")
+treemap.lowerKey("B")//"A"
+treemap.floorKey("B")//
+treemap.higherKey("B")
+treemap.higherKey("C")
+treemap.ceilingKey("B")//"B"//it returns greater than or equal to value which we have
+treemap.lowerKey("B")"A"//<
+treemap.floorKey("B")"B"//<=
+treemap.firstEntry()//A=15
+treemap.lastEntry()//Z=5
+treemap
+//treemap ==>{A=15, B=25, G=25, L=250, Z=5}
+treemap.subMap(
+//subMap(
+treemap.subMap("C", "Y")
+//{F=25, G=25, L=250}
+treemap.subMap("B", "Z")
+//{B=25, F=25, G=25, L=250}
+treemap.subMap("B",true, "Z",true)
+//{B=25, F=25, G=25, L=250}

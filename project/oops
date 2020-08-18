@@ -1,0 +1,237 @@
+Exercises
+Creating a simple class
+public class Rectangle
+length, width;
+What constructors?
+What Operations?
+Object Composition - Book and Reviews
+Book > id, name, author
+Reviews > id, description, rating
+ Book book =
+ new Book(123, "Object Oriented Programming with Java",
+ "Ranga");
+
+ book.addReview(
+ new Review(10, "Great Book", 5));
+ book.addReview(
+ new Review(101, "Awesome", 5);
+ System.out.println(book);
+Inheritance
+Setup an Inheritance Hierarchy and implement toString in Employee class
+Person
+name,phone,email;
+Student
+college, class
+Employee
+title, employer, employeeGrade, salary
+toString (print all values including those of Person)
+Interface and Abstract Class
+interface Flyable
+void fly();
+Bird "with wings"
+Aeroplane "with fuel"
+Flyable flyingObjects = {new Bird(), new Aeroplane()};
+Loop and invoke fly method
+
+
+abstract class Animal
+void bark()
+Dog "Bow Bow"
+Cat "Meow Meow"
+Animal[] animals = {new Cat(), new Dog()};
+
+Loop and invoke bark method
+Code Examples
+
+/commands.txt
+
+class Animal{
+}
+// created class Animal
+class Pet{
+}
+// created class pet
+class Animal{
+}
+//modified class Animal
+class Pet extends Animal {
+ public void groom() {
+ System.out.println("Groom");
+ } }
+ //replaced class pet
+ class Dog extends pet{
+ }
+ //created class Dog
+ Dog dog = new Dog();//dog==>Dog@72d818d1
+ //dog class constructor called,after that pet class constructor called,and then the animal constructor get called
+ //then object constructor is called inheritance hierarchy,we don't have multiple inheritance in java
+ 
+dog.toString()//$7==>Dog@72d818d1
+dog.groom()//Groom
+
+//we can have super class reference variable that can hold sub class  variable
+Pet pet = new Dog();//Dog@4fe3c938
+pet.groom()//Groom
+pet instanceof Pet//true 
+pet instanceof Dog//true //we can check current object is an instance of any of the super class
+pet instanceof Animal//true
+pet instanceof Object//true
+ 
+Animal animal = new Animal()
+//animal==>Animal@3632be31 
+animal instanceof Pet//false//because animal is a supercalss
+animal instanceof Dog//false
+animal instanceof Object//true
+
+//Abstract class//we can whata are the restrictions behind an abstract class
+//in the next level we can see where are abstract classes
+class Animal {
+ public void bark() {
+ System.out.println("TEst");
+ }
+}
+//replaced class Animal
+update replaced variable animal, reset to null
+Animal animal = new Animal()
+//anima; ==>Animal@335eadca
+animal.bark()//TEst
+abstract class AbstractAnimal {
+ abstract public void bark();
+}
+//created class AbstractAnimal
+
+class Dog extends AbstractAnimal {
+ public void bark() {
+ System.out.println("Bow Bow");
+ }
+}
+//created class Dog
+Dog dog = new Dog();//instance//Dog@5a8e6209
+dog.bark()//Bow Bow
+AbstractAnimal animal = new AbstractAnimal()
+//it throws an error because we cannot create instances of the abstract class
+
+
+
+abstract class AbstractTest {
+}
+//created class AbstractTest
+
+abstract class AbstractAlgorithm{
+abstract void steps();
+}
+//created class AbstractAlgorithm
+
+ class Algorithm1 extends AbstractAlgorithm {
+}
+//error it says it should either be extract or it should implement the steps
+ 
+ abstract class Algorithm1 extends AbstractAlgorithm {
+}
+//created class Algorithm1
+
+abstract class AbstractAlgorithm {
+ private int stepCount;
+ public int getStepCount() {
+ return stepCount();
+ }
+}
+//replaced class AbstractionAlgorithm, however, it cannot be instantiated or it's
+methods invoked until method stepCount() is declared
+ class Implementation implements Interface2 {
+ 
+
+ //projects wants to outsorce an complex algorithm
+ int complexAlgorithm(int number1, int number2);
+ //if we have concrete class extending that abstract class,the combination of concrete class and abstract class should provide the implementations to all the methods defined in the interface to and the sub interface
+interface Interface1 {
+void method1();
+}
+//created interface Interface1
+ interface Interface2 extends Interface1 {
+void method2();
+}
+//created interface Interface2
+class Implementation implements Interface2{
+}
+//error:Implementaton is not abstract and does not override abstract methid method2() in Interface2
+class Implementation implements Interface2{
+void method2() {}
+class Implementation implements Interface2{
+
+public void method2() { }
+}
+//error:Implementaton is not abstract and does not override abstract methid method1() in Interface1
+ class Implementation implements Interface2{
+ public void method2() { }
+ public void method1() { }
+}
+//created class Implementation
+
+abstract class ImplementationAbstract implements Interface2
+{
+ public void method1() { }
+}
+//created class ImplementationAbstract
+
+interface Interface3 {
+ int test = 5;
+}
+//created interface Interface3
+
+interface Interface4 {
+ default void print() {
+ System.out.println("default");
+ }
+}
+//created interface Interface4
+
+class Test implements Interface4 {
+}
+//created class Test
+
+Test test = new Test();
+//tet==>Test@6ebc05a6
+
+test.print()//default
+
+class Test1 implements Interface4 {
+ public void print() {
+ System.out.println("override");
+ }
+}
+//created class Tet1
+
+Test1 test = new Test1();
+//test==>Test1@3d99d22e
+
+test.print()//override
+//
+
+//difference b/n interface and abstract class
+//actually there is no similarity b/n them except that the syntax is looking like little bit similar
+when wee use interface mean when there are two classes to have communication b/n them we need interfacec
+//one party should provide the implementation and other could consume the implementation
+//in interface everything is private
+//in this we cannot have variables
+
+abstract class came into picture in little bit of different context 
+we would leave the implementation details to the subclasses
+reltion b/n sub class and super class is abstract
+these kind of relations does not exists in interface
+in abstract class everything is 
+similar to the abstract class we have variables
+we cannot extend multiple abstract classes
+
+in Arraylist we have
+list interface
+randomaccess interface
+cloneable interface
+serializable interface
+a class xan implements multiple interfaces
+interface Interface1 {
+ void method1();
+}
+interface Interface2 {
+ void method2();
+}

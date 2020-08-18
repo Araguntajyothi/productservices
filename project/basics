@@ -1,0 +1,379 @@
+Exercises
+Expressions
+Write a Java expression to calculate the number of minutes in a day.
+Write a Java expression to calculate the number of seconds in a day.
+Printing Output to Console
+Print Hello World onto the console.
+Print 5 * 3 , as is.
+Print the calculated value of 5 * 3 .
+How do we now approach the Multiplication Table print problem, for the
+number 5 ?
+Print the number of seconds in a day, using
+the System.out.println method.
+Do a syntax revision for the code that you write for each of the above exercises. In
+your code, identify the following elements:
+Numeric and string literals
+Expressions
+Operators
+Operands
+Method calls
+Advanced Printing Output to Console
+Print the following output by passing 4 values 5, ,6, 7 and sum of the numbers: 5
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 9/203
+ + 6 + 7 = 18
+Variables
+Create three integer variables a , b and c .
+Write a statement to print the sum of these three variables.
+Change the value of a , and then print this sum.
+Then again, change the value of b and print this sum.
+If Statement
+Create four integer variables a , b , c and d . - Write an if statement to
+print if the sum of a and b is greater than the sum of c and d .
+Store three numerical values as proposed angles of a triangle in integer
+variables angle1 , angle2 and angle3 . Create an if statement to
+state whether these three angles together can form a triangle. Hint: A triangle is a
+closed geometric figure with three angles, whose sum must exactly equal 180
+degrees .
+Have a variable store an integer. Create an if statement to find out if it's an even
+number.Hint: Use operator ###code#<.
+For Loop
+Repeat the entire process at arriving at the Multiplication Table Print problem, now
+for the number 7 . Start with fresh JShell session, if you're still using an existing
+one for quite some time (Rinse, and repeat!).
+Use the final solution to print Multiplication Tables for 6 and 10 .
+Print the integers from 1 to 10 .
+Print the integers from 10 to 1 .
+Print the squares of the integers from 1 to 10 .
+Print the squares of the first 10 even integers.
+Print the squares of the first 10 odd integers.
+Code Snippets
+3*4
+System.out.println(3*4)
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 10/203
+System.out.println("5 * 2 = 10")
+3.0/2
+System.out.println("5 * 2")
+System.out.println(5 * 2)
+System.out.println("Hello World")
+System.out.println(5*3)
+System.out.println("5 * 3")
+System.out.println(5*3) System.out.println("5 * 1 = 5")
+System.out.println("5 * 2 = 5")
+System.out.println("5 * 3 = 5")
+System.out.println("24 * 60 * 60")
+System.out.println(24 * 60 * 60)
+System.out.println("Hello World")
+System.out.println("Hello World")
+System.out.println(24 * 60 * 60)
+System.out.println("Hello World")
+System.out.println("HelloWorld")
+System.out.println("hello world")
+System.out.println("hello \"world")
+System.out.println("hello \"world")
+System.out.println("hello n world")
+System.out.println("hello \n world")
+System.out.println("hello \nworld")
+System.out.println("hello\nworld")
+System.out.println("hello\tworld")
+System.out.println("hello \\ world")
+System.out.println("hello \\\\ world")
+Math.random()
+System.out.println("hello \n world")
+Math.min(23,45)
+Math.min(23,4)
+Math.max(23,4)
+System.out.println("5 * 2 = 5")
+System.out.println("5 * 2 = 10")
+5*2
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 11/203
+System.out.printf("5 * 2 = 10")
+System.out.printf("5 * 2 = 10").println()
+System.out.printf("5 * 2 = 10 %d", 5*2).println()
+System.out.printf("5 * 2 = %d", 5*2).println()
+System.out.printf("%d %d %d", 5, 7, 5 * 7).println()
+System.out.printf("%d * %d = %d", 5, 7, 5 * 7).println()
+System.out.printf("%d + %d + %d = %d", 5, 6, 7, 5 + 6 +
+7).println()
+System.out.printf("%d + %d + %d = %d", 5, 6, 7).println()
+System.out.printf("%d + %d + %d", 5, 6, 7).println()
+System.out.printf("%d + %d + %d", 5, 6).println()
+System.out.printf("%d + %d + %d", 5, 6, 7, 8).println()
+System.out.printf("Print %s", "Testing").println()
+System.out.printf("%d + %d + %d", 5.5, 6.5, 7.5).println()
+System.out.printf("%f + %f + %f", 5.5, 6.5, 7.5).println()
+System.out.printf("5 * 2 = 10")
+System.out.printf("%d * %d = %d", 5, 2, 5 * 2).println()
+System.out.println("5 * 2 = 10")
+System.out.printf("%d * %d = %d", 5, 2, 5 * 2).println()
+System.out.printf("%d * %d = %d", 5, 1, 5 * 1).println()
+System.out.printf("%d * %d = %d", 5, 2, 5 * 2).println()
+System.out.printf("%d * %d = %d", 5, 3, 5 * 3).println()
+System.out.printf("%d * %d = %d", 5, 4, 5 * 4).println()
+number = 11
+number
+number = 12
+number
+number2 = 100
+System.out.printf("%d * %d = %d", 5, 4, 5 * 4).println()
+System.out.printf("%d * %d = %d", 5, i, 5 * i).println()
+i
+5 * i
+i = 2
+System.out.printf("%d * %d = %d", 5, i, 5 * i).println()
+i = 3
+System.out.printf("%d * %d = %d", 5, i, 5 * i).println()
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 12/203
+i = 10
+System.out.printf("%d * %d = %d", 5, i, 5 * i).println()
+System.out.printf("a + b + c = a+b+c").println()
+System.out.printf("%d + %d + %d = %d", a, b, c
+,a+b+c).println()
+a = 50 System.out.printf("%d + %d + %d = %d", a, b, c
+,a+b+c).println()
+b = 60
+System.out.printf("%d + %d + %d = %d", a, b, c
+,a+b+c).println()
+int newVariable;
+newVariable
+int undeclaredVariable;
+undeclaredVariable
+5 * undeclaredVariable
+a = 100
+a = c
+int noOfGoals;
+int NoOfGoals;
+int score;
+short s;
+float f = 4.0f;
+float f2 = 4.5f;
+double dbl = 4.5;
+i = j
+i
+j
+i = j
+i = j * 2
+i = i * 2
+i = i + i
+i = i - i
+i = i - 1
+i++
+i
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 13/203
+i++
+i
+i--
+number = number + 1
+number++ number--
+++number
+--number
+number--
+number
+i = i + 2
+i += 2
+i -= 1
+i *= 5
+i
+i /= 4
+i %= 2
+;
+long l = 6_000_000_000l;
+short numberOfGoals;
+numberOfGoals++
+numberOfGoals
+numberOfGoals++
+numberOfGoals
+long populationOfTheWorld;
+double average;
+char ch = 'A';
+ch = 'B'
+char grade = 'C';
+grade = 'A'
+grade
+boolean isEven;
+isEven = true
+boolean isPrime;
+boolean isItRainingToday;
+boolean areYouEnjoyingTheCourse;
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 14/203
+areYouEnjoyingTheCourse = true
+System.out.printf("%d * %d = %d", 5, i, 5*i);
+System.out.printf("%d * %d = %d", 5, i, 5*i).println()
+System.out.printf("%d * %d = %d", 5, i, 5*i).println()
+System.out.printf("%d * %d = %d", 5, i, 5*i).println()
+i = 7
+System.out.printf("%d * %d = %d", 5, i, 5*i).println()
+i = 10
+i < 5
+i > 5
+i <= 5
+i <= 10
+i >= 10
+System.out.println("i is less than 5");
+i
+if (i<5)
+ System.out.println("i is less than 5");
+i
+i = 4
+if (i<5)
+ System.out.println("i is less than 5");
+int number1 = 5;
+int number2 = 7;
+if (number2>number1)
+System.out.println("number2 is greater than number1");
+number2 = 3
+if (number2>number1)
+System.out.println("number2 is greater than number1");
+int a = 1;
+int b = 2;
+int c = 3;
+int d = 1;
+if(a+b > c +d)
+System.out.println("a+b is greater than c+d");
+a = 6
+if(a+b > c +d)
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 15/203
+System.out.println("a+b is greater than c+d");
+if ( a + b > c + d )
+ System.out.println("a+b is greater than c+d"); int
+angle1 = 20;
+int angle2 = 60;
+int angle3 = 50;
+if(angle1 + angle2 + angle3 == 180)
+ System.out.println("Valid Triangle");
+angle3 += 50
+angle3
+angle1
+angle2
+if(angle1 + angle2 + angle3 == 180)
+ System.out.println("Valid Triangle");
+int number = 10;
+number % 2
+9 % 2
+8 % 2
+if (number % 2 == 0)
+System.out.println("number is even");
+if (number % 2 == 0)
+System.out.println("number is even");
+number = 9
+if (number % 2 == 0)
+System.out.println("number is even");
+i > 5
+i = 5
+i == 5
+i == 6
+if(i==5)
+System.out.println("i is odd");
+if(i==5)
+System.out.println("i is odd");
+ System.out.println("i is prime");
+i == 6
+i = 6
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 16/203
+if(i==5)
+System.out.println("i is odd");
+ System.out.println("i is prime");
+if(i==5) {
+System.out.println("i is odd");
+System.out.println("i is prime");
+}
+if(i==5) {
+System.out.println("i is prime");
+}
+System.out.printf("%d * %d = %d", 5, i, 5*i).println()
+System.out.printf("%d * %d = %d", 5, i, 5*i).println()
+i = i + 1
+System.out.printf("%d * %d = %d", 5, i, 5*i).println()
+i = i + 1
+System.out.printf("%d * %d = %d", 5, i, 5*i).println()
+for( i =1; i<=10; i++) {
+ System.out.printf("%d * %d = %d", 5, i, 5*i).println();
+}
+for( i =1; i<=10; i++) {
+ System.out.printf("%d * %d = %d", 6, i, 6*i).println();
+}
+for( i =1; i<=10; i++) {
+ System.out.printf("%d * %d = %d", 7, i, 7*i).println();
+}
+int table = 7;
+for( i =1; i<=10; i++) {
+ System.out.printf("%d * %d = %d", table, i,
+table*i).println();
+}
+table = 8
+for( i =1; i<=10; i++) {
+ System.out.printf("%d * %d = %d", table, i,
+table*i).println();
+}
+table = 8
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 17/203
+for( i =1; i<=10; i++) {
+ System.out.printf("%d * %d = %d", table, i,
+table*i).println();
+}
+table = 9
+for( i =1; i<=10; i++) {
+ System.out.printf("%d * %d = %d", table, i,
+table*i).println();
+}
+for(i =1; i<=10; i++) {
+ System.out.printf("%d", i).println();
+}
+for(i=10; i<=1 ;i--) {
+ System.out.printf("%d", i).println();
+}
+for(i=10; i>=1 ;i--) {
+ System.out.printf("%d", i).println();
+}
+for(i=10; i>=1 ;i = i - 2) {
+ System.out.printf("%d", i).println();
+}
+for(i=9; i>=1 ;i = i - 2) {
+ System.out.printf("%d", i).println();
+}
+for(i =1; i<=10; i++) {
+ System.out.printf("%d", i * i).println();
+}
+for(i =2; i<=10; i = i + 2) {
+ System.out.printf("%d", i * i).println();
+}
+for(i =2; i<=20; i = i + 2) {
+ System.out.printf("%d", i * i).println();
+}
+for(i =1; i<=10; i++) {
+ System.out.printf("%d", (2 * i) * (2 * i) ).println();
+}
+9/17/2018 in28Minutes | (0/25)
+http://beacon.by/magazine/pdf/in28minutes/learn-java-programming-in-250-steps?type=print 18/203
+for(i =1; i<=20; i = i + 2) {
+ System.out.printf("%d", i * i).println();
+}
+int i = 1;
+for ( ;i<=10 ;i++ );
+i
+for (i=1 ;i<=10 ;i++ );
+int j;
+for (i=1, j=2 ;i<=10 ;i++, j++ );
+i
+j
+for (i=1, j=2 ;i<=10 ;i++, j--);
+i
+j
+for(;;);
+for(int i=1; i<=10; i++) {
+System.out.println("No 1");
+System.out.println("No 2");
+}
+for(int i=1; i<=10; i++) {
+System.out.println("No 1");
+System.out.println("No 2");
+}
+ System.out.println("i is less than 5");
