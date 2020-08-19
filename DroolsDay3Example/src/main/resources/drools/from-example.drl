@@ -1,0 +1,15 @@
+/*package drools;
+
+import com.cts.training.day3.Product;
+import com.cts.training.day3.Person;
+import com.cts.training.day3.Address;
+
+rule "from-example"
+
+when 
+    $person:Person();
+    $addressRef:Address(city.equalsIgnoreCase("HYD")) from $person.address;    
+ then
+     System.out.println("$address:::::"+$addressRef.getCity());
+     
+     end */

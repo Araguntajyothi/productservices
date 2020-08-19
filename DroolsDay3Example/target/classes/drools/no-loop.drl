@@ -1,0 +1,34 @@
+/*package drools;
+
+import com.cts.training.day3.Product;
+import com.cts.training.day3.Person;
+import com.cts.training.day3.Address;
+
+rule "discount-rule"
+no-loop false
+when 
+  $product:Product($productPrice:productPrice > 50000,productName=="mobile")
+  
+then
+
+  System.out.println("modifying mobile price");
+  modify($product)
+  {
+  setproductPrice($productPrice+10000);
+  }
+  $product.setDiscount(0.10*$productPrice);
+end
+
+rule "print-product-details"
+when
+$product:Product($productPrice:productPrice)
+  
+then
+     System.out.println("print-product-details invoked");
+     System.out.println("productName-->"+$product.getProductName());  
+      System.out.println("productPrice-->"+$product.getProductPrice()); 
+       System.out.println("discount-->"+$product.getDiscount());
+       
+ end         
+ 
+   */

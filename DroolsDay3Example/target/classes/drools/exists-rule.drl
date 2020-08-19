@@ -1,0 +1,24 @@
+/*package drools;
+
+import com.cts.training.day3.Product;
+import com.cts.training.day3.Person;
+import com.cts.training.day3.Address;
+
+rule "person_exists-example"
+
+when 
+    exists person(age>40)
+    
+ then
+     System.out.println("person exists.....");
+     
+     end
+     rule "product_exists-example"
+    
+
+when 
+    exists Product()
+    
+ then
+     System.out.println("product exists.....");
+     */   
