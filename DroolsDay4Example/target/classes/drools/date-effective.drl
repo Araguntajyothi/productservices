@@ -1,0 +1,10 @@
+//created on 5 june,2020
+/*package drools
+/*rule "test-dateEffective-rules-1"
+//rule can be activated only if the current date and time is after a date-effective
+date-effective "6-June-2020"
+  when
+  
+  then
+  System.out.println("test-dateEffective-rules-1");
+  end */

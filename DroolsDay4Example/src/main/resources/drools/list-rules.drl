@@ -1,0 +1,17 @@
+/*package drools
+
+import java.utl.Map
+import java.util.list
+import com.sample.model.person
+
+rule "list-rules"
+
+      when 
+      
+      $list : List()
+      $p : Person(age == 19)from $list
+    then
+    System.out.println("person.age=" + ((Person)$list.get(0)).getAge());
+    System.out.println("person1.ge=" + ((Person)$list.get(0)).getAge());
+    System.out.println("List Test");
+   end   */

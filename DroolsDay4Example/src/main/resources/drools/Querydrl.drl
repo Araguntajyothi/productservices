@@ -1,0 +1,5 @@
+/*package drools;
+query "person over 25"
+  person:Person(age>25)
+  
+  end */

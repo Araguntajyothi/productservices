@@ -1,0 +1,35 @@
+package drools;
+
+import com.cts.training.day4.Person;
+
+rule "my-rule1"
+
+when
+   $person:Person(age>18)
+then
+     $person.setHobby("FOOT BALL");
+end
+
+rule "my-rule2"
+
+when
+   $person:Person(userType == "Regular") 
+then
+   $person.setHobby("READING");
+end
+
+rule "my-rule3"
+
+when
+    $person:Person(name == "varun") 
+then
+    $person.setHobby("MUSIC");
+end
+
+rule "my-rule4"
+
+when
+    $person:Person(age>10,age<18) 
+then
+    $person.setHobby("READING");
+end

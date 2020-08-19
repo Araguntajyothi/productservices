@@ -1,0 +1,27 @@
+//created on 5June 2020
+/*package drools
+
+import com.sample.DroolsTest.Message;
+
+//gloabal variable is one which will be visible to all the rules inside a DRL file.
+ 
+ /*global com.cts.training.day4.EmailService emailService
+ 
+ rule "global-test-rule2"
+ 
+ when
+    Message( status ==Message.Hello || text=="Goodbye")
+    
+then
+  System.out.println("the rule of global-test-rule2 is fired!");
+  emailService.sendEmail();
+  
+end
+
+rule "rule24"
+
+when
+
+then
+    System.out.println("Then rule24");
+    

@@ -1,0 +1,43 @@
+package drools;
+
+import com.cts.training.day4.Student;
+
+rule "studentrule1"
+
+when
+   $student:Student(marks<30)
+then
+     $student.setGrade("FAILED");
+end
+
+rule "studentrule2"
+
+when
+   $student:Student(marks>30,marks<50) 
+then
+    $student.setGrade("Third");
+end
+
+rule "studentrule3"
+
+when
+    $student:Student(marks>50,marks<60) 
+then
+    $student.setGrade("SECOND");
+end
+
+rule "studentrule4"
+
+when
+    $student:Student(marks>60,marks<80) 
+then
+   $student.setGrade("FIRST");
+end
+
+rule "studentrule5"
+
+when
+    $student:Student(marks>80) 
+then
+   $student.setGrade("STAR");
+end

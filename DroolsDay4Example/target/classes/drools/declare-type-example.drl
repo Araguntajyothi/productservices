@@ -1,0 +1,26 @@
+package drools;
+ 
+ import com.cts.training.day4.Person
+declare student
+   name:String
+   marks:int
+   
+end
+
+rule "declare-type-example"
+when
+   $person:person()
+then
+   Student student = new Student();
+   student.setName("jyothi");
+   student.setMarks(95);
+   insert(student);
+end
+
+rule "fire-student-rule"
+when
+  $student:Student(marks>90)
+then
+System.out.println($student.getName()); 
+System.out.println($student.getMarks()); 
+end         
