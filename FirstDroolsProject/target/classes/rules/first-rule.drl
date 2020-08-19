@@ -1,0 +1,31 @@
+package rules;
+
+import com.cts.training.day1.poc.Employee;
+
+rule "first-emp-rule"
+salience 100
+when
+  $emp:Employee(age>18)
+  
+then
+    System.out.println("Employee  is Major");
+end  
+
+
+rule "third-emp-rule"
+salience 10
+when
+  $emp:Employee(age>18)
+  
+then
+    System.out.println("Employee Name is printed");
+end      
+
+rule "second-emp-rule"
+salience 50
+when
+  $emp:Employee(age>18)
+  
+then
+    System.out.println("Employee  is Minor");
+end          

@@ -1,0 +1,42 @@
+package agendafolder;
+
+import com.cts.training.day1.poc.Employee;
+
+rule "major-citizen"
+agenda-group "citizen"
+
+when
+  $emp:Employee(age>18)
+  
+then
+    System.out.println("MAJOR");
+end  
+
+rule "minor-citizen"
+agenda-group "citizen"
+
+when
+  $emp:Employee(age<18)
+  
+then
+    System.out.println("MINOR");
+end  
+
+rule "footballer"
+agenda-group "sports"
+when
+  $emp:Employee(age>18)
+  
+then
+    System.out.println("FOOTBALL");
+end  
+
+rule "cricketer"
+agenda-group "sports"
+
+when
+  $emp:Employee(age<18)
+  
+then
+    System.out.println("CRICKET");
+end  

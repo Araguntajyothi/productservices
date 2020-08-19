@@ -1,0 +1,14 @@
+package agendafolder;
+
+import com.cts.training.day1.poc.Employee;
+
+rule "rule1"
+agenda-group "citizen"
+
+when
+  $emp:Employee(age>60)
+  
+then
+    System.out.println("SENIOR");
+end  
+
